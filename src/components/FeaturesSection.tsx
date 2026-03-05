@@ -30,7 +30,7 @@ const features = [
 ];
 
 const FeaturesSection = () => (
-  <section id="features" className="section-padding bg-section-alt">
+  <section id="features" className="section-padding bg-black">
     <div className="container mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -38,14 +38,17 @@ const FeaturesSection = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <p className="font-display text-xs tracking-widest text-secondary uppercase mb-3 text-center">
+        {/* Title */}
+        <h1 className="font-display text-4xl font-bold tracking-widest text-orange-500 uppercase mb-4 text-center">
           Key Features
-        </p>
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">
-          System Capabilities
-        </h2>
+        </h1>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <p className="text-gray-400 text-sm font-serif mb-12 text-center">
+          System Capabilities
+        </p>
+
+        {/* Feature Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((f, i) => (
             <motion.div
               key={f.title}
@@ -53,14 +56,19 @@ const FeaturesSection = () => (
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
-              className="flex gap-4 bg-card rounded-xl border border-border p-6"
+              className="flex gap-4 bg-neutral-900 rounded-2xl border border-gray-800 p-6 hover:border-gray-600 transition-colors"
             >
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
                 <f.icon className="text-primary" size={20} />
               </div>
+
               <div>
-                <h3 className="font-display text-sm font-bold text-foreground mb-1">{f.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
+                <h3 className="font-display text-sm font-bold text-white mb-1">
+                  {f.title}
+                </h3>
+                <p className="text-sm text-gray-400 leading-relaxed">
+                  {f.desc}
+                </p>
               </div>
             </motion.div>
           ))}

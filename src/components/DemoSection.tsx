@@ -10,19 +10,16 @@ const DemoSection = () => (
         transition={{ duration: 0.6 }}
         className="text-center"
       >
-        <p className="font-display text-xs tracking-widest text-secondary uppercase mb-3">
-          Demo
-        </p>
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-          See It in Action
-        </h2>
-        <p className="text-muted-foreground max-w-xl mx-auto mb-10">
-          Watch the full system demo — from API query to LED display output with IR control and
+        <h1 className="font-serif font-bold text-4xl text-orange-500 mb-3 text-center">
+          DEMO VIDEO
+        </h1>
+        <p className="text-black-foreground max-w-xl mx-auto mb-10">
+          Watch the full system demo: from API query to LED display output with IR control and
           cloud telemetry.
         </p>
 
         <div className="max-w-3xl mx-auto rounded-xl overflow-hidden border border-border bg-hero aspect-video flex items-center justify-center">
-          {/* Replace the div below with:
+          {/* 
               <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" ... />
           */}
           <div className="text-center">

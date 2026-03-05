@@ -11,11 +11,12 @@ const OverviewSection = () => (
         className="grid md:grid-cols-2 gap-12 items-center"
       >
         <div>
-          <h2 className="font-serif font-bold text-2xl tracking-widest text-orange-500 uppercase mb-3">
-            Project Overview - Aircraft Detection and Display
+          <h2 className="font-serif font-bold text-4xl tracking-widest text-orange-500 uppercase mb-3">
+            Project Overview
           </h2>
-          {/* <h2 className="text-3xl md:text-xl font-display font-bold text-foreground mb-6">
-          </h2> */}
+          <h2 className="font-serif font-bold text-2xl text-black uppercase mb-3">
+            Aircraft Detection and Display
+          </h2>
             <ul className="text-black font-serif leading-relaxed space-y-2 list-disc list-inside">
               <li>
                 <span className="text-black">

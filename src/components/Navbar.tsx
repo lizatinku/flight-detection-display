@@ -29,8 +29,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-16">
-        <a href="#" className="font-display text-xl font-bold tracking-tight text-foreground">
-          <span className="gradient-text">EEC 172</span> // Flight Tracker
+        <a href="#" className="font-display text-2xl font-bold tracking-tight text-foreground">
+          <span className="gradient-text">EEC 172</span> 
         </a>
 
         {/* Desktop */}

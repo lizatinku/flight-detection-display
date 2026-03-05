@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import statemachine from "../assets/statemachine.png";
 
 const steps = [
   { label: "OpenSky API", desc: "REST query over WiFi" },
@@ -25,11 +26,6 @@ const ArchitectureSection = () => (
           End-to-End Data Flow
         </h2>
 
-        {/* <p className="text-gray-400 max-w-2xl mx-auto text-center mb-12">
-          The CC3200 orchestrates WiFi networking, sensor I/O, display rendering, and cloud
-          connectivity — all running on a single-threaded real-time firmware loop.
-        </p> */}
-
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2 mb-16">
           {steps.map((s, i) => (
             <div key={s.label} className="flex items-center gap-2 md:gap-4">
@@ -46,9 +42,11 @@ const ArchitectureSection = () => (
         </div>
 
         <div className="bg-zinc-900 rounded-xl border border-zinc-700 p-10 flex items-center justify-center min-h-[280px]">
-          <p className="font-display text-sm text-gray-400">
-            Architecture diagram placeholder
-          </p>
+          <img
+            src={statemachine}
+            alt="System Architecture Diagram"
+            className="max-h-[240px] object-contain"
+          />
         </div>
       </motion.div>
     </div>

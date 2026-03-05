@@ -38,7 +38,7 @@ const members = [
 ];
 
 const SetupTeamSection = () => (
-  <section className="section-padding bg-section-alt">
+  <section className="section-padding bg-black">
     <div className="container mx-auto">
 
       {/* Reproducibility Section */}
@@ -48,13 +48,9 @@ const SetupTeamSection = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <p className="font-display text-xs tracking-widest text-secondary uppercase mb-3 text-center">
-          Reproducibility
-        </p>
-
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">
-          How to Recreate This Project
-        </h2>
+        <h1 className="font-serif font-bold text-3xl text-orange-500 mb-10 text-center">
+          HOW TO REPRODUCE THIS PROJECT?
+        </h1>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
           {steps.map((s, i) => (
@@ -64,21 +60,21 @@ const SetupTeamSection = () => (
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="relative bg-card rounded-xl border border-border p-6"
+              className="relative bg-neutral-900 rounded-2xl border border-gray-800 p-6"
             >
-              <span className="absolute -top-3 -left-3 w-7 h-7 rounded-full bg-primary text-primary-foreground font-display text-xs font-bold flex items-center justify-center">
+              <span className="absolute -top-3 -left-3 w-7 h-7 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">
                 {i + 1}
               </span>
 
-              <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center mb-4">
-                <s.icon className="text-secondary" size={20} />
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                <s.icon className="text-primary" size={20} />
               </div>
 
-              <h3 className="font-display text-sm font-bold text-foreground mb-2">
+              <h3 className="font-semibold text-white mb-2">
                 {s.title}
               </h3>
 
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm text-gray-400 leading-relaxed">
                 {s.desc}
               </p>
             </motion.div>
@@ -93,29 +89,29 @@ const SetupTeamSection = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">
-          Built By
-        </h2>
+        <h1 className="font-serif font-bold text-2xl text-orange-500 mb-10 text-center">
+          BUILT BY
+        </h1>
 
         <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
           {members.map((m) => (
             <div
               key={m.name}
-              className="bg-card rounded-xl border border-border p-6 text-center"
+              className="bg-neutral-900 rounded-2xl border border-gray-800 p-6 text-center"
             >
-              <div className="w-16 h-16 rounded-full bg-muted flex items-center justify-center mx-auto mb-4">
-                <User className="text-muted-foreground" size={28} />
+              <div className="w-16 h-16 rounded-full bg-neutral-800 flex items-center justify-center mx-auto mb-4">
+                <User className="text-gray-400" size={28} />
               </div>
 
-              <h3 className="font-display text-sm font-bold text-foreground">
+              <h3 className="font-semibold text-white">
                 {m.name}
               </h3>
 
-              <p className="text-xs text-secondary font-display mt-1 mb-3">
+              <p className="text-xs text-orange-400 mt-1 mb-3">
                 {m.role}
               </p>
 
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm text-gray-400 leading-relaxed">
                 {m.desc}
               </p>
             </div>
