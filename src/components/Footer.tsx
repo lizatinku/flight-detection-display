@@ -9,14 +9,14 @@ const Footer = () => (
       <p className="text-xs text-hero-muted/60 mb-6">
         Overhead Flight Detection & Display © {new Date().getFullYear()}
       </p>
-      <a
+      {/* <a
         href="https://github.com"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 text-sm text-secondary hover:text-secondary/80 transition-colors font-display"
       >
         <Github size={16} /> View on GitHub
-      </a>
+      </a> */}
     </div>
   </footer>
 );

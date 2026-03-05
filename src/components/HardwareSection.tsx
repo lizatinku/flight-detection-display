@@ -33,11 +33,8 @@ const HardwareSection = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <p className="font-display text-xs tracking-widest text-secondary uppercase mb-3 text-center">
+        <h2 className="font-display text-2xl tracking-widest text-secondary uppercase mb-10 text-center">
           Hardware Components
-        </p>
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-12 text-center">
-          What's in the Box
         </h2>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

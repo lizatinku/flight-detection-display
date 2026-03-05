@@ -5,8 +5,7 @@ import ArchitectureSection from "@/components/ArchitectureSection";
 import HardwareSection from "@/components/HardwareSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import DemoSection from "@/components/DemoSection";
-import SetupSection from "@/components/SetupSection";
-import TeamSection from "@/components/TeamSection";
+import SetupSection from "@/components/TeamandRecreateSection";
 import Footer from "@/components/Footer";
 
 const Index = () => (
@@ -19,7 +18,6 @@ const Index = () => (
     <FeaturesSection />
     <DemoSection />
     <SetupSection />
-    <TeamSection />
     <Footer />
   </>
 );

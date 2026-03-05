@@ -29,7 +29,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-16">
-        <a href="#" className="font-display text-sm font-bold tracking-tight text-foreground">
+        <a href="#" className="font-display text-xl font-bold tracking-tight text-foreground">
           <span className="gradient-text">EEC 172</span> // Flight Tracker
         </a>
 
@@ -39,7 +39,7 @@ const Navbar = () => {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-xl font-medium text-white hover:text-primary transition-colors"
             >
               {l.label}
             </a>

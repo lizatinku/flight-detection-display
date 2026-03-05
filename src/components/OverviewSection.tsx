@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Cpu } from "lucide-react";
 
 const OverviewSection = () => (
   <section id="overview" className="section-padding bg-background">
@@ -12,35 +11,51 @@ const OverviewSection = () => (
         className="grid md:grid-cols-2 gap-12 items-center"
       >
         <div>
-          <p className="font-display text-xs tracking-widest text-secondary uppercase mb-3">
-            Project Overview
-          </p>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-            Real-Time Aircraft Tracking on an Embedded Platform
+          <h2 className="font-serif font-bold text-2xl tracking-widest text-orange-500 uppercase mb-3">
+            Project Overview - Aircraft Detection and Display
           </h2>
-          <p className="text-muted-foreground leading-relaxed mb-4">
-            This system uses a <strong className="text-foreground">TI CC3200 LaunchPad</strong> to
-            query the OpenSky Network REST API over WiFi, parse incoming JSON flight data, and render
-            nearby aircraft metadata — including callsign, altitude, and origin — on a cascaded
-            MAX7219 LED dot-matrix display via SPI.
-          </p>
-          <p className="text-muted-foreground leading-relaxed">
-            An ambient light sensor adjusts display brightness automatically, while an IR receiver
-            enables interrupt-driven user control. Flight telemetry is simultaneously published to
-            AWS IoT Core via MQTT for cloud logging and analytics.
-          </p>
+          {/* <h2 className="text-3xl md:text-xl font-display font-bold text-foreground mb-6">
+          </h2> */}
+            <ul className="text-black font-serif leading-relaxed space-y-2 list-disc list-inside">
+              <li>
+                <span className="text-black">
+                  TI CC3200 LaunchPad queries the OpenSky REST API over WiFi and parses JSON flight data.
+                </span>
+              </li>
+
+              <li>
+                <span className="text-black">
+                  Nearby aircraft metadata (callsign, altitude, origin) is displayed on a cascaded MAX7219 LED dot-matrix display via SPI.
+                </span>
+              </li>
+
+              <li>
+                <span className="text-black">
+                  An ambient light sensor dynamically adjusts display brightness.
+                </span>
+              </li>
+
+              <li>
+                <span className="text-black">
+                  An IR receiver enables interrupt-driven user controls.
+                </span>
+              </li>
+
+              <li>
+                <span className="text-black">
+                  Flight telemetry is published to AWS IoT Core via MQTT for cloud logging and analytics.
+                </span>
+              </li>
+            </ul>
         </div>
 
-        {/* Diagram placeholder */}
-        <div className="bg-muted rounded-xl border border-border p-8 flex flex-col items-center justify-center min-h-[320px]">
-          <Cpu className="text-secondary mb-4" size={48} />
+        <div className="bg-muted rounded-xl border border-border p-12 flex flex-col items-center justify-center aspect-square max-w-sm">
           <p className="font-display text-sm text-muted-foreground text-center">
-            System photo / diagram placeholder
+            Placeholder for project picture
           </p>
-          <p className="text-xs text-muted-foreground mt-1">Replace with project image</p>
         </div>
-      </motion.div>
-    </div>
+        </motion.div>
+      </div>
   </section>
 );
 

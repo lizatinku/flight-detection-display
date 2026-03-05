@@ -21,7 +21,6 @@ const DemoSection = () => (
           cloud telemetry.
         </p>
 
-        {/* YouTube embed placeholder */}
         <div className="max-w-3xl mx-auto rounded-xl overflow-hidden border border-border bg-hero aspect-video flex items-center justify-center">
           {/* Replace the div below with:
               <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" ... />
@@ -33,10 +32,7 @@ const DemoSection = () => (
               </svg>
             </div>
             <p className="font-display text-sm text-hero-muted">
-              YouTube video placeholder
-            </p>
-            <p className="text-xs text-hero-muted/60 mt-1">
-              Replace with your demo video embed
+              Our Demo video
             </p>
           </div>
         </div>
