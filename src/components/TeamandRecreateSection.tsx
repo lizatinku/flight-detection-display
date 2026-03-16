@@ -27,13 +27,13 @@ const steps = [
 const members = [
   {
     name: "Liza Tinku Jose",
-    role: "Role:",
-    desc: "Description:",
+    role: "Role: Software Development",
+    // desc: "Description:",
   },
   {
     name: "Tyson Tien Nguyen",
-    role: "Role:",
-    desc: "Description:",
+    role: "Role: Hardware and AWS integration",
+    // desc: "Description:",
   },
 ];
 

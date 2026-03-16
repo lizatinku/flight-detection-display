@@ -18,10 +18,13 @@ const DemoSection = () => (
           cloud telemetry.
         </p>
 
-        <div className="max-w-3xl mx-auto rounded-xl overflow-hidden border border-border bg-hero aspect-video flex items-center justify-center">
-          {/* 
-              <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" ... />
-          */}
+        <div className="max-w-3xl mx-auto rounded-xl overflow-hidden border border-border bg-hero aspect-video">
+          <iframe
+            src="https://drive.google.com/file/d/1oW2LnGLqxTpRyoKmRFFiue_qZfEVKOuK/preview"
+            className="w-full h-full"
+            allow="autoplay"
+            allowFullScreen
+          />
           <div className="text-center">
             <div className="w-16 h-16 rounded-full bg-secondary/20 flex items-center justify-center mx-auto mb-4">
               <svg className="text-secondary" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">

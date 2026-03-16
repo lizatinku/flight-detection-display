@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import statemachine from "../assets/statemachine.png";
+import flowchart from "../assets/flowchart2.png";
 
 const steps = [
   { label: "OpenSky API", desc: "REST query over WiFi" },
   { label: "CC3200 MCU", desc: "JSON parse & control logic" },
-  { label: "MAX7219 LED", desc: "SPI-driven dot matrix display" },
+  { label: "OLED display", desc: "SPI-driven display" },
   { label: "AWS IoT", desc: "MQTT telemetry publish" },
 ];
 
@@ -41,11 +41,11 @@ const ArchitectureSection = () => (
           ))}
         </div>
 
-        <div className="bg-zinc-900 rounded-xl border border-zinc-700 p-10 flex items-center justify-center min-h-[280px]">
+        <div className="bg-zinc-900 rounded-xl border border-zinc-700 p-4 md:p-8 flex items-center justify-center">
           <img
-            src={statemachine}
+            src={flowchart}
             alt="System Architecture Diagram"
-            className="max-h-[240px] object-contain"
+            className="w-full max-w-5xl object-contain drop-shadow-2xl"
           />
         </div>
       </motion.div>

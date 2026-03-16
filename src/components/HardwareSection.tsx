@@ -9,8 +9,8 @@ const components = [
   },
   {
     icon: LayoutGrid,
-    title: "MAX7219 LED Matrix",
-    desc: "Cascaded 8×8 dot-matrix modules driven over SPI for scrolling text and flight data.",
+    title: "OLED Display",
+    desc: "128×128 color SSD1351 OLED driven over SPI for real-time flight information and graphical views.",
   },
   {
     icon: Sun,
